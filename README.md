@@ -1,4 +1,6 @@
 # crud_node
-Learning a CRUD with node.js, express and postgreSQL.
 
-Aprendendo CRUD com node.js, express e postgreSQL.
+1. Install **Insomnia**;
+2. Install all dependences **npm install express morgan body-parser pg**;
+3. In insomnia write in link *localhost:port*(is defined in apps.js)use */* if use JSON;
+4. Use **npm start** for run the project with express in localhost;
