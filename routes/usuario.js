@@ -29,8 +29,8 @@ router.post("/", async function(req, res, next) {
 router.patch("/:id", async function(req, res, next) {
  try {
  const result = await db.query(
- "UPDATE usuario SET nome=$1, sobrenome=$2, email=$3 WHERE id=$4 RETURNING *",
- [req.body.nome, req.body.sobrenome, req.body.email, req.params.id]
+ "UPDATE usuario SET ativo=$1 nome=$2, sobrenome=$3, email=$4 WHERE id=$5 RETURNING *",
+ [req.body.ativo, req.body.nome, req.body.sobrenome, req.body.email, req.params.id]
  );
  return res.json(result.rows[0]);
  } catch (err) {

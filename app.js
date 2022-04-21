@@ -56,6 +56,6 @@ if (app.get("env") === "development") {
 }
 
 // -------- CONEXÃO DO EXPREESS PARA FAZER UM LOCALHOST ------------
-app.listen(3333, function() {                       
- console.log("Server starting on port 3333!");      
+app.listen(3000, function() {                       
+ console.log("Server starting on port 3000!");      
 });
